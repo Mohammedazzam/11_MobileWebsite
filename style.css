@@ -10,14 +10,17 @@ body {
   font-family: "Tajawal", sans-serif;
 }
 
+/* Navbar styling */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 10vh;
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 5rem;
 }
+
 nav .logo {
   display: flex;
   font-size: 2rem;
@@ -29,16 +32,21 @@ nav .logo i {
   padding-left: 0.75rem;
 }
 
+nav .bars-menu {
+  display: none;
+}
+
 nav .logo h4 {
   font-family: "Lalezar", cursive;
 }
 
 nav .nav-items {
   display: flex;
-  list-style: none;
+  list-style-type: none;
 }
+
 nav .nav-items .nav-item {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 nav .nav-link {
@@ -49,4 +57,69 @@ nav .nav-link {
 
 nav .nav-link:hover {
   color: #6e0aef;
+}
+
+/* Heor styling */
+.hero {
+  background-color: #f8f7fc;
+}
+
+.hero-section {
+  max-width: 1366px;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.hero-section .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section .content h4 {
+  color: #6e0aef;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .content p {
+  color: rgb(29, 29, 29);
+  font-size: 1.4rem;
+}
+
+.hero-section .content p span.purple {
+  color: #6e0aef;
+}
+
+.hero-section form {
+  display: flex;
+}
+
+.btn {
+  width: 10rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  background-color: #6e0aef;
+}
+
+.btn:hover {
+  background-color: #7d22f3;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.4rem;
 }
